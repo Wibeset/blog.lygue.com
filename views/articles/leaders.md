@@ -1,0 +1,3 @@
+Today, we added Leaders in Players section. Basically, this sub-section shows top 3 players for goals, assists, points, goalies’ wins, goalies’ gaa and goalies’ shutouts. Players (forwards and defenses) and goalies are now two distinct sub-section.
+
+A new sub-section in Players section is under development. This sub-section will shows players stars statistics; How many stars (first, second and third) players got.

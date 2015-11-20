@@ -1,0 +1,51 @@
+
+<?php $__env->startSection('content'); ?>
+<section id="article">
+    <article itemscope itemtype="http://schema.org/Article">
+        <div>
+            <header>
+                <time datetime="<?php echo $date->formatLocalized('%Y-%m-%d'); ?>" itemprop="datePublished"><?php echo $date->formatLocalized('%e %B %Y'); ?></time>
+                <h1 itemprop="name"><?php echo $title; ?></h1>
+            </header>
+            <?php echo $content; ?>
+            <footer>
+                <a class="btn" href="https://twitter.com/home?status=<?php echo $share['title'] . ' ' . $share['url']; ?>"><i class="fa fa-fw fa-twitter"></i></a>
+                <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $share['url']; ?>"><i class="fa fa-fw fa-facebook"></i></a>
+                <a class="btn" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $share['url']; ?>&title=<?php echo $share['title']; ?>&summary=&source="><i class="fa fa-fw fa-linkedin"></i></a>
+                <a class="btn" href="https://plus.google.com/share?url=<?php echo $share['url']; ?>"><i class="fa fa-fw fa-google-plus"></i></a>
+                <a class="btn" href="mailto:?subject=<?php echo $share['title']; ?>&body=<?php echo $share['url']; ?>"><i class="fa fa-fw fa-envelope"></i></a>
+                <img src="<?php echo $author['img']; ?>"> <span itemprop="author"> <?php echo $author['name']; ?> </span>
+            </footer>
+            <div id="disqus_thread"></div>
+        </div>
+    </article>
+    <?php if (!empty($next)): ?>
+    <article class="next">
+        <div>
+            <header>
+                <h2>Article suivant</h2>
+            </header>
+            <time datetime="<?php echo $next['date']->formatLocalized('%Y-%m-%d'); ?>"><?php echo $next['date']->formatLocalized('%e %B %Y'); ?></time>
+            <a class="title" href="http://blogue.ellipse-synergie.com/<?php echo $next['uri']; ?>"><?php echo $next['title']; ?></a>
+            <p><?php echo $next['intro']; ?></p>
+            <a class="btn" href="http://blogue.ellipse-synergie.com/<?php echo $next['uri']; ?>">Lire &rarr;</a>
+
+        </div>
+    </article>
+    <?php endif; ?>
+    <?php if (!empty($previous)): ?>
+    <article class="next">
+        <div>
+            <header>
+                <h2>Article précédent</h2>
+            </header>
+            <time datetime="<?php echo $previous['date']->formatLocalized('%Y-%m-%d'); ?>"><?php echo $previous['date']->formatLocalized('%e %B %Y'); ?></time>
+            <a class="title" href="http://blogue.ellipse-synergie.com/<?php echo $previous['uri']; ?>"><?php echo $previous['title']; ?></a>
+            <p><?php echo $previous['intro']; ?></p>
+            <a class="btn" href="http://blogue.ellipse-synergie.com/<?php echo $previous['uri']; ?>">Lire &rarr;</a>
+        </div>
+    </article>
+    <?php endif; ?>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

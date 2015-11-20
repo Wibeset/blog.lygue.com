@@ -1,0 +1,32 @@
+
+<?php $__env->startSection('content'); ?>
+<section id="blogs">
+    <header class="ellipse">
+        <img src="<?php echo $assets; ?>img/logo.jpg">
+        <h1>Relier l'humain et la technologie</h1>
+        <p>par l'équipe d'<a href="http://ellipse-synergie.com" target="_blank">Ellipse Synergie</a></p>
+        <a class="btn" href="http://ellipse-synergie.com" target="_blank">Ellipse Synergie</a>
+        <a class="btn" href="http://twitter.com/EllipseSynergie" target="_blank">Twitter</a>
+        <a class="btn" href="http://facebook.com/EllipseSynergie" target="_blank">Facebook</a>
+        <a class="btn" href="https://www.linkedin.com/company/ellipse-synergie" target="_blank">LinkedIn</a>
+    </header>
+    <ul>
+        <?php foreach ($articles as $article): ?>
+        <li>
+            <div itemscope itemtype="http://schema.org/Article">
+                <time datetime="<?php echo $article['date']->formatLocalized('%Y-%m-%d'); ?>" itemprop="datePublished"><?php echo $article['date']->formatLocalized('%e %B %Y'); ?></time>
+                <a class="title" href="http://blogue.ellipse-synergie.com/<?php echo $article['uri']; ?>"><span itemprop="name"><?php echo $article['title']; ?></span></a>
+                <p><?php echo $article['intro']; ?></p>
+                <a class="btn" href="http://blogue.ellipse-synergie.com/<?php echo $article['uri']; ?>">Lire &rarr;</a>
+            </div>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+    <div id="pagination">
+        <a class="btn  pull-left <?php echo $page != '1' ? '' : 'hide'; ?>" href="<?php echo ($page - 1 ) == 1 ? 'http://blogue.ellipse-synergie.com/' : 'http://blogue.ellipse-synergie.com/page'.($page - 1).'.html'; ?>">&larr; Précédent</a>
+        <a class="btn  pull-right <?php echo $page != $max_page ? '' : 'hide'; ?>" href="http://blogue.ellipse-synergie.com/page<?php echo $page + 1; ?>.html">Suivant &rarr;</a>
+        <div class="text-center"><?php echo $page; ?></div>
+    </div>
+</section>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

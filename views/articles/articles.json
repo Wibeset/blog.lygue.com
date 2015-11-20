@@ -1,0 +1,158 @@
+{
+    "articles": [
+        {
+            "title": "Top NHL Players",
+            "intro": "For one week, we put aside the development of Lygue version 3 to build <a href=\"http://www.topnhlplayers.com\">Top NHL Players</a>. This side project is a collection of top NHL players grouped by position and year.",
+            "uri": "top-nhl-players",
+            "author": "dominic",
+            "date": "20150901"
+        },
+        {
+            "title": "Welcome to Maxime and Keyven",
+            "intro": "I'm proud to announce that Maxime Beaudoin and Keyven Ferland are joining me to build a better Lygue.",
+            "uri": "welcome-maxime-keyven",
+            "author": "dominic",
+            "date": "20141019"
+        },
+        {
+            "title": "Statistics columns",
+            "intro": "You can now decide what statistics are shown (hockey and baseball).",
+            "uri": "statistics-columns",
+            "author": "dominic",
+            "date": "20121218"
+        },
+        {
+            "title": "Supporting men’s health...",
+            "intro": "Once again this year, we let our mustaches grow in support to Movember. Help us fight cancer!",
+            "uri": "supporting-men-health",
+            "author": "dominic",
+            "date": "20121104"
+        },
+        {
+            "title": "Version 2 private beta",
+            "intro": "Since saturday, private beta for version 2 is open. It should be open for about 2 weeks. Then, it will lygue.com will be open to everyone.",
+            "uri": "version-2-private-beta",
+            "author": "dominic",
+            "date": "20120813"
+        },
+        {
+            "title": "Back @ work!",
+            "intro": "For a few weeks, we put Lygue aside to develop Playffs. But now that round 2 is about to begin, we can get back to work.",
+            "uri": "playffs",
+            "author": "dominic",
+            "date": "20120427"
+        },
+        {
+            "title": "Let the mustaches grow!",
+            "intro": "We are happy to be part of Movember this year. Support Movember and our team by donating to Lygue.",
+            "uri": "movember",
+            "author": "dominic",
+            "date": "20111123"
+        },
+        {
+            "title": "Multi-season support is available...",
+            "intro": "This is a major update tonight. We just added multi-season support. So if you already own a league, you will not lose past season statistics.",
+            "uri": "multi-season-support-is-available",
+            "author": "dominic",
+            "date": "20110817"
+        },
+        {
+            "title": "Ligues.ca becoming Lygue... soon.",
+            "intro": "Soon, Ligues.ca will become Lygue. We have decided to change our name to something easy to remember, available under dotcom and easy to say in any languages.",
+            "uri": "liguesca-becoming-lygue-soon",
+            "author": "dominic",
+            "date": "20110810"
+        },
+        {
+            "title": "Hello summer",
+            "intro": "A few weeks ago, we released baseball and most recently, basketball and volleyball. But summer also rhymes with soccer and football. So here they are... You are now able to create soccer and football leagues.",
+            "uri": "hello-summer",
+            "author": "dominic",
+            "date": "20110523"
+        },
+        {
+            "title": "Baseball is now available",
+            "intro": "As you know, we are working on baseball leagues since a while. So, today is the big day. We release baseball leagues and some minor updates.",
+            "uri": "baseball-is-now-available",
+            "author": "dominic",
+            "date": "20110425"
+        },
+        {
+            "title": "Hockey playoff &amp; Baseball news",
+            "intro": "Playoff are probably coming soon in your league. Tomorrow, we’ve added “Playoff” filter in section Schedule. So, now, you are able to enter your playoff schedule.",
+            "uri": "hockey-playoff-baseball-news",
+            "author": "dominic",
+            "date": "20110226"
+        },
+        {
+            "title": "Custom penalties",
+            "intro": "Some of you asked for the possibility to add custom penalties to your leagues. It’s available tonight...",
+            "uri": "custom-penalties",
+            "author": "dominic",
+            "date": "20110217"
+        },
+        {
+            "title": "Penalties",
+            "intro": "This weekend, we’ll add a new tab called “Penalties” in the player profile. It will contain a complete list of all the player’s penalties. This new feature will allow you to better keep track of the player.",
+            "uri": "penalties",
+            "author": "dominic",
+            "date": "20110213"
+        },
+        {
+            "title": "Leaders...",
+            "intro": "Today, we added Leaders in Players section. Basically, this sub-section shows top 3 players for goals, assists, points, goalies’ wins, goalies’ gaa and goalies’ shutouts. Players (forwards and defenses) and goalies are now two distinct sub-section.",
+            "uri": "leaders",
+            "author": "dominic",
+            "date": "20101128"
+        },
+        {
+            "title": "Work hard !",
+            "intro": "We still work hard at Ligues.ca. We are currently working on few things that will be release soon.",
+            "uri": "work-hard",
+            "author": "dominic",
+            "date": "20100908"
+        },
+        {
+            "title": "Homepage, filter by city & discussions",
+            "intro": "We are still working on the homepage because we are not satisfied by the current one. Our goal is to do a page that will show the three main sections: Leagues, Places and Players.",
+            "uri": "homepage-filter-by-city-discussions",
+            "author": "dominic",
+            "date": "20100829"
+        },
+        {
+            "title": "Release done! (And what we are working on)",
+            "intro": "As you may have probably noticed, a major release has been done 3 days ago. We are very happy of this release. We think the site is cleaner and simplier.",
+            "uri": "release-done-and-what-we-are-working-on",
+            "author": "dominic",
+            "date": "20100822"
+        },
+        {
+            "title": "Widgetify!",
+            "intro": "Everybody who own a website will be able to show teams’ standing nor top players list on it by including a simple Javascript widget. Both widgets are configurable. You will be able to change limit of teams to show (or players) and activate or not default CSS stylesheet.",
+            "uri": "widgetify",
+            "author": "dominic",
+            "date": "20100810"
+        },
+        {
+            "title": "A bit more social...",
+            "intro": "Today, we have release version 0.5. This version makes Ligues.ca a bit more social because we added Facebook Connect and a tool to share stuff with your friends on del.icio.us, Facebook and Twitter.",
+            "uri": "a-bit-more-social",
+            "author": "dominic",
+            "date": "20100116"
+        },
+        {
+            "title": "We are online",
+            "intro": "We are happy to be online after several months of development. We are still in beta for few months...",
+            "uri": "we-are-online",
+            "author": "dominic",
+            "date": "20091003"
+        },
+        {
+            "title": "Countdown to private beta",
+            "intro": "Our goal is to go in private beta with some friends on mid-august. We got less than 30 tasks to resolved before...",
+            "uri": "countdown-to-private-beta",
+            "author": "dominic",
+            "date": "20090805"
+        }
+    ]
+}

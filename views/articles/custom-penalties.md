@@ -1,0 +1,3 @@
+Some of you asked for the possibility to add custom penalties to your leagues. It’s available tonight...
+
+To add a custom penalty, go to “Admin” section and click on “Penalties” tab. This page let you add, update and delete custom penalties. After you added some custom penalties, these new penalties will be selectable in games summary.
