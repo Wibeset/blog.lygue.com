@@ -25,22 +25,26 @@
 </head>
 <body class="{{ $body }}">
 
-    <a class="btn" id="back" href="http://blog.lygue.com"><i class="fa fa-angle-left"></i></a>
+    <!--<a class="btn" id="back" href="http://blog.lygue.com"><i class="fa fa-angle-left"></i></a>-->
 
-    <div id="container">
+    <sidebar>
+        <header>
+            <img src="{{ $assets }}img/logo.png" width="100">
+            <h1>Blog @ Lygue</h1>
+        </header>
+        <p>Lygue is a sports leagues manager. From the biggest to the smallest league, Lygue manages statistics in detail with ease.</p>
+        <p>Sports leagues management made easy.</p>
+        <footer>
+            <a href="https://www.twitter.com/Lygue"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.facebook.com/Lygue"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/Lygueapp"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.lygue.com"><i class="fa fa-globe"></i></a>
+        </footer>
+    </sidebar>
+
+    <div>
         @yield('content')
     </div>
-
-    <footer>
-        <div>
-            <hr>
-            <span>Blog @ Lygue</span>
-            <a href="https://www.twitter.com/Lygue"><i class="fa fa-fw fa-twitter-square"></i></a>
-            <a href="https://www.facebook.com/Lygue"><i class="fa fa-fw fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/Lygueapp"><i class="fa fa-fw fa-instagram"></i></a>
-            <a href="https://www.lygue.com"><i class="fa fa-fw fa-globe"></i></a>
-        </div>
-    </footer>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
