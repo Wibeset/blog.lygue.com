@@ -3,7 +3,9 @@
 @section('content')
 <article id="article">
     <nav>
-        <a href="http://blog.lygue.com"><i class="fa fa-chevron-circle-left"></i></a>
+        <div>
+            <a href="http://blog.lygue.com"><i class="fa fa-chevron-circle-left"></i> &nbsp; Back to blog.lygue.com</a>
+        </div>
     </nav>
     <section itemscope itemtype="http://schema.org/Article">
         <header>
@@ -22,25 +24,29 @@
     </section>
     @if (!empty($next))
         <section class="next">
-            <header>
-                <h2>Next post</h2>
-            </header>
+            <hr>
             <time datetime="{{ $next['date']->formatLocalized('%Y-%m-%d') }}">{{ $next['date']->formatLocalized('%B %e, %Y') }}</time>
-            <a class="title" href="http://blogue.ellipse-synergie.com/{{ $next['uri'] }}">{{ $next['title'] }}</a>
+            <a class="title" href="http://blog.lygue.com/{{ $next['uri'] }}">{{ $next['title'] }}</a>
             <p>{{ $next['intro'] }}</p>
-            <a class="btn" href="http://blogue.ellipse-synergie.com/{{ $next['uri'] }}">Read &rarr;</a>
+            <a class="btn" href="http://blog.lygue.com/{{ $next['uri'] }}">Read &rarr;</a>
         </section>
     @endif
     @if (!empty($previous))
         <section class="next">
-            <header>
-                <h2>Previous post</h2>
-            </header>
+            <hr>
             <time datetime="{{ $previous['date']->formatLocalized('%Y-%m-%d') }}">{{ $previous['date']->formatLocalized('%B %e, %Y') }}</time>
-            <a class="title" href="http://blogue.ellipse-synergie.com/{{ $previous['uri'] }}">{{ $previous['title'] }}</a>
+            <a class="title" href="http://blog.lygue.com/{{ $previous['uri'] }}">{{ $previous['title'] }}</a>
             <p>{{ $previous['intro'] }}</p>
-            <a class="btn" href="http://blogue.ellipse-synergie.com/{{ $previous['uri'] }}">Read &rarr;</a>
+            <a class="btn" href="http://blog.lygue.com/{{ $previous['uri'] }}">Read &rarr;</a>
         </section>
     @endif
+    <footer>
+        <hr>
+        <p>Sports leagues management made easy</p>
+        <a href="https://www.twitter.com/Lygue"><i class="fa fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/Lygue"><i class="fa fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/Lygueapp"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.lygue.com"><i class="fa fa-globe"></i></a>
+    </footer>
 </article>
 @endsection

@@ -70,7 +70,7 @@ foreach ($articles as $index => $article) {
         'date'        => Carbon::createFromFormat('Ymd', $article['date']),
         'content'     => Markdown::defaultTransform(file_get_contents($file)),
         'share'       => [
-            'url'     => 'http://blogue.ellipse-synergie.com/' . $article['uri'] . '.html',
+            'url'     => 'http://blog.lygue.com/' . $article['uri'] . '.html',
             'title'   => $article['title'],
             'body'    => $article['intro']
         ],

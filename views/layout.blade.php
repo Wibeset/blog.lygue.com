@@ -16,7 +16,7 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="//fonts.googleapis.com/css?family=Headland+One" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" media="all" href="{{ $assets }}css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,23 +24,6 @@
     <link rel="icon" type="image/png" href="{{ $assets }}favicon.png">
 </head>
 <body class="{{ $body }}">
-
-    <!--<a class="btn" id="back" href="http://blog.lygue.com"><i class="fa fa-angle-left"></i></a>-->
-
-    <sidebar>
-        <header>
-            <img src="{{ $assets }}img/logo.png" width="100">
-            <h1>Blog @ Lygue</h1>
-        </header>
-        <p>Lygue is a sports leagues manager. From the biggest to the smallest league, Lygue manages statistics in detail with ease.</p>
-        <p>Sports leagues management made easy.</p>
-        <footer>
-            <a href="https://www.twitter.com/Lygue"><i class="fa fa-twitter-square"></i></a>
-            <a href="https://www.facebook.com/Lygue"><i class="fa fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/Lygueapp"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.lygue.com"><i class="fa fa-globe"></i></a>
-        </footer>
-    </sidebar>
 
     <div>
         @yield('content')
@@ -51,19 +34,16 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-26401583-3', 'auto');
+        ga('create', 'UA-34049964-3', 'auto');
         ga('send', 'pageview');
     </script>
 
-    <!-- Disqus plugin https://disqus.com/ -->
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'liguesca';
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    <script>
+        (function() {  // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '//lygue.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
         })();
     </script>
 
