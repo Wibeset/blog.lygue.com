@@ -2,11 +2,8 @@
 
 @section('content')
 <article id="article">
-    <nav>
-        <div>
-            <a href="http://blog.lygue.com"><i class="fa fa-chevron-circle-left"></i> &nbsp; Back to blog.lygue.com</a>
-        </div>
-    </nav>
+    <header style="background-image: url('{{ $assets }}img/header.jpg');">
+    </header>
     <section itemscope itemtype="http://schema.org/Article">
         <header>
             <time datetime="{{ $date->formatLocalized('%Y-%m-%d') }}" itemprop="datePublished">{{ $date->formatLocalized('%B %e, %Y') }}</time>
@@ -40,13 +37,5 @@
             <a class="btn" href="http://blog.lygue.com/{{ $previous['uri'] }}">Read &rarr;</a>
         </section>
     @endif
-    <footer>
-        <hr>
-        <p>Sports leagues management made easy</p>
-        <a href="https://www.twitter.com/Lygue"><i class="fa fa-twitter-square"></i></a>
-        <a href="https://www.facebook.com/Lygue"><i class="fa fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/Lygueapp"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.lygue.com"><i class="fa fa-globe"></i></a>
-    </footer>
 </article>
 @endsection

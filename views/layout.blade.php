@@ -25,9 +25,26 @@
 </head>
 <body class="{{ $body }}">
 
+    <nav>
+        <a class="btn" href="http://lygue.com">Manage my league</a>
+        <a class="btn" href="http://lygue.com/tour">Learn more</a>
+        <a class="logo" href="http://blog.lygue.com">
+            <img src="{{ $assets }}img/logo.png" width="100">
+        </a>
+    </nav>
+
     <div>
         @yield('content')
     </div>
+
+    <footer>
+        <div>
+            <h2>Manage your sport league with Lygue</h2>
+            <p>Better organize your league. Manage, share, discuss and archive everything that's essential for your league. Give Lygue a try, it's free for 30 days.</p>
+            <a class="btn btn-inverse" href="http://lygue.com">Manage my league</a>
+            <a class="btn btn-inverse" href="http://lygue.com/tour">Learn more</a>
+        </div>
+    </footer>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
