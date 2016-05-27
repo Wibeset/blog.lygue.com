@@ -1,8 +1,10 @@
 
 $font-stack:                "Noto Serif", Helvetica, Arial, sans-serif;
 $bg-color:                  #fff;
-$text-color:                #222;
-$accent-color:              #2c3e50;
+$text-color:                #00171f;
+$accent-color:              #003459;
+$third-color:               #00a8e8;
+$grey-dark-color:           #666;
 $grey-light-color:          #fafafa;
 $border-color:              #eee;
 $max-width:                 700px;
@@ -58,7 +60,6 @@ a.btn {
     }
 
     &:hover {
-        color: $accent-color;
         border-color: $accent-color;
     }
 }
@@ -76,7 +77,7 @@ a.btn-inverse {
 hr {
     margin: 60px auto;
     max-width: 200px;
-    border: 3px solid lighten($text-color, 80%);
+    border: 3px solid $grey-light-color;
 
     @media only screen and (max-width: $x-small-screen) {
         margin: 30px auto;
@@ -157,7 +158,7 @@ body > footer {
                 padding: 0 5px 0 0;
                 border: 0;
                 font-size: 30px;
-                color: lighten($accent-color, 10%);
+                color: $accent-color;
 
                 &:hover {
                     color: $accent-color;
@@ -195,13 +196,13 @@ body > footer {
                     font-size: 20px;
                 }
 
-                &hover {
+                &:hover {
                     color: $accent-color;
                 }
             }
 
             time {
-                color: lighten($text-color, 40%);
+                color: $grey-dark-color;
 
                 @media only screen and (max-width: $x-small-screen) {
                     font-size: 14px;
@@ -235,14 +236,14 @@ body > footer {
             padding: 18px;
             width: 40%;
             font-size: 22px;
-            background-color: lighten($text-color, 80%);
+            background-color: $accent-color;
             border: 0;
             border-radius: 3px;
             text-align: center;
-            color: $text-color;
+            color: #fff;
 
             &:hover {
-                background-color: lighten($text-color, 70%);
+                background-color: $text-color;
             }
 
             @media only screen and (max-width: $x-small-screen) {
@@ -311,7 +312,7 @@ body > footer {
             }
 
             time {
-                color: lighten($text-color, 60%);
+                color: $grey-dark-color;
             }
         }
 
@@ -328,7 +329,7 @@ body > footer {
         h3 {
             margin: 45px 0 15px 0;
             font-size: 22px;
-            color: lighten($text-color, 30%);
+            color: lighten($text-color, 10%);
 
             @media only screen and (max-width: $x-small-screen) {
                 font-size: 18px;
@@ -348,12 +349,12 @@ body > footer {
         img {
             margin: 30px 0 30px -20px;
             max-width: 100%;
-            border: 20px solid lighten($text-color, 80%);
+            border: 20px solid $grey-light-color;
 
             @media only screen and (max-width: $x-small-screen) {
                 margin: 15px 0;
                 max-width: 270px;
-                border: 10px solid lighten($text-color, 80%);
+                border: 10px solid $grey-light-color;
             }
         }
 
@@ -366,9 +367,9 @@ body > footer {
         blockquote {
             margin-left: -18px;
             padding: 5px 0 5px 15px;
-            border-left: 3px solid lighten($text-color, 70%);
+            border-left: 3px solid $grey-light-color;
             font-style: italic;
-            color: lighten($text-color, 40%);
+            color: $grey-dark-color;
 
             p {
                 margin: 0;
@@ -387,12 +388,12 @@ body > footer {
                 display: inline-block;
                 margin-right: 5px;
                 text-decoration: none;
-                color: lighten($text-color, 70%);
+                color: $accent-color;
                 border: 0;
                 font-size: 42px;
 
                 &:hover {
-                    color: $accent-color;
+                    color: $text-color;
                 }
             }
         }
@@ -418,12 +419,12 @@ body > footer {
         }
 
         time {
-            color: lighten($text-color, 60%);
+            color: $grey-dark-color;
         }
 
         p {
             margin: 30px 0;
-            color: lighten($text-color, 40%);
+            color: $text-color;
         }
     }
 
@@ -455,11 +456,11 @@ iframe {
         > a {
             padding: 0 5px;
             font-size: 40px;
-            color: lighten($text-color, 70%);
+            color: $accent-color;
             border: 0;
 
             &:hover {
-                color: $accent-color;
+                color: $text-color;
             }
         }
     }
